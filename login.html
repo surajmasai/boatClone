@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <title>Buy Earbuds, Headphones, Earphones at India’s No.1 Earwear Brand: boAt – boAt Lifestyle</title>
+
+    <style>
+        body {
+            background-color: black;
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        /* start navbar */
+
+        .navbar {
+            display: flex;
+            background-color: black;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .navbar>div {
+            background-color: black;
+            margin: 10px;
+            padding: 5px;
+            font-size: 30px;
+            height: 60px;
+        }
+
+        .boat_logo {
+            margin-top: -10px;
+            margin-left: 50px;
+        }
+
+        .category_item {
+            display: flex;
+        }
+
+        /* .category_item >ul {
+            list-style-type: none;
+        } */
+
+        .category_item>li {
+            margin-left: 5px;
+            margin-right: 30px;
+            list-style-type: none;
+        }
+
+        .category_item>li>a {
+            text-decoration: none;
+            /* font-weight: bold; */
+            color: white;
+            font-size: 25px;
+            justify-content: center;
+        }
+
+        .navbar_search {
+            display: flex;
+        }
+
+        .navbar_search>input {
+            height: 50px;
+            width: 400px;
+            /* margin-top: 0px; */
+            border-radius: 20px;
+            font-size: 40px;
+        }
+
+        .navbar_search>div {
+            margin-left: 40px;
+            color: white;
+
+        }
+
+        .navbar_search>div>a>i {
+            color: white;
+        }
+
+        .cart_count {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            z-index: 999;
+            background: red;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            font-size: 23px;
+        }
+
+
+
+        /*  start dropdown */
+
+        .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding-top: 0px;
+            padding-bottom: 10px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+
+        .dropdown:hover .dropbtn,
+        .dropbtn:focus {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            right: -88px;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 8px 8x;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            background-color: red;
+            color: white;
+            margin-top: 5px;
+            font-size: 20px;
+
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .dropbtn>i {
+            font-size: 35px;
+        }
+
+        .hi {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px;
+
+        }
+
+        /* end dropdown */
+        #space {
+            width: 100%;
+            height: 650px;
+            background-color: white;
+        }
+
+        #form {
+            /* border: 2px solid red; */
+            width: 500px;
+            margin: auto;
+            padding: 30px;
+            background-color: #fafafa;
+        }
+
+        #form>h1 {
+            text-align: center;
+            font-size: 70px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        #form>form {
+            margin-top: 60px;
+
+        }
+
+        #form>form>div>label {
+            font-size: 30px;
+        }
+
+        #form>form>div {
+
+            margin-top: 20px;
+
+        }
+
+        #form>form>div>input {
+            width: 400px;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        #form>form>div>button {
+            width: 400px;
+            height: 50px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        #form>form>a {
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .marquee {
+            background-color: black;
+            padding: 10px;
+        }
+
+        span.text-stroke {
+            -webkit-text-stroke: 1px white;
+            font-weight: 700;
+        }
+
+        span.text-white {
+            color: #fff;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wholePage">
+        <!-- ------------------------------------start navbar---------------- -->
+        <div class="navbar">
+            <div class="navbar-cont">
+                <a href="index.html">
+                    <img width="150px"
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267"
+                        alt="boat" title="boat" class="boat_logo" style="background-color: black;" />
+                </a>
+            </div>
+            <div class="navbar_category">
+                <ul class="category_item">
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">Pro It Up</a></li>
+                    <li><a href="#">Sound of Champions</a></li>
+                    <li><a href="#">more</a></li>
+                </ul>
+            </div>
+            <div class="navbar_search">
+                <input type="text" placeholder="search" />
+                <div>
+                    <a href="#"><i class="bi bi-gift"></i></a>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">
+                        <i class="bi bi-person-fill"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <p class="hi">Hi boAthead!</p>
+                        <a href="#">Log In</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="cart.html"><i class="bi bi-cart-fill"></i>
+                        <span class="cart_count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="space">
+            <div id="form">
+                <h1>Login</h1>
+                <form>
+                    <div>
+                        <label>Email</label><br>
+                        <input type="text" id="email" />
+                    </div>
+                    <div>
+                        <label>Password</label><br>
+                        <input type="password" id="pwd" />
+                    </div>
+                    <div>
+                        <button id="logIn">Sign In</button>
+                    </div>
+                    <a href="signup.html">Create account</a>
+                </form>
+
+            </div>
+        </div>
+        <!-- --------------------------start line---------------------- -->
+        <div class="marquee">
+            <p class="marquee_text" style="font-size: 30px;">
+                <marquee scrollamount="10" direction="left to right">
+                    <span class="text-white">SOUND OF CHAMPIONS &nbsp;&nbsp;</span>
+                    <span class="text-stroke">PLAY LIKE A KING &nbsp;&nbsp;</span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white">SOUND OF CHAMPIONS &nbsp;&nbsp;</span>
+                    <span class="text-stroke">PLAY LIKE A KING &nbsp;&nbsp;</span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white">SOUND OF CHAMPIONS &nbsp;&nbsp;</span>
+                    <span class="text-stroke">PLAY LIKE A KING &nbsp;&nbsp;</span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white">SOUND OF CHAMPIONS &nbsp;&nbsp;</span>
+                    <span class="text-stroke">PLAY LIKE A KING &nbsp;&nbsp;</span>
+                    <span class="text-white">SOUND OF CHAMPIONS &nbsp;&nbsp;</span>
+                    <span class="text-stroke">PLAY LIKE A KING &nbsp;&nbsp;</span>
+                </marquee>
+            </p>
+        </div>
+        <!-- --------------------------end line---------------------- -->
+    </div>
+    <!-- ---------------------------end navbar-------------- -->
+</body>
+
+</html>
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function (e) {
+        if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }
+
+    logIn.onclick = function (event) {
+        event.preventDefault();
+        var data = JSON.parse(localStorage.getItem("users"));
+
+        var sign = document.getElementById("email").value;
+        var pwd = document.getElementById("pwd").value;
+
+        // console.log(data);
+        // console.log(data?.take_email);
+
+        // console.log(data.take_password, pwd);
+
+        if (sign == data?.take_email && pwd == data?.take_password) {
+
+            window.location.href = 'index.html';
+
+
+        } else {
+            alert("your email and password are wrong")
+        }
+    }
+</script>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <title>Buy Earbuds, Headphones, Earphones at India’s No.1 Earwear Brand: boAt – boAt Lifestyle</title>
+
+    <style>
+        body {
+            background-color: black;
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        /* start navbar */
+
+        .navbar {
+            display: flex;
+            background-color: black;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .navbar>div {
+            background-color: black;
+            margin: 10px;
+            padding: 5px;
+            font-size: 30px;
+            height: 60px;
+        }
+
+        .boat_logo {
+            margin-top: -10px;
+            margin-left: 50px;
+        }
+
+        .category_item {
+            display: flex;
+        }
+
+        /* .category_item >ul {
+            list-style-type: none;
+        } */
+
+        .category_item>li {
+            margin-left: 5px;
+            margin-right: 30px;
+            list-style-type: none;
+        }
+
+        .category_item>li>a {
+            text-decoration: none;
+            /* font-weight: bold; */
+            color: white;
+            font-size: 25px;
+            justify-content: center;
+        }
+
+        .navbar_search {
+            display: flex;
+        }
+
+        .navbar_search>input {
+            height: 50px;
+            width: 400px;
+            /* margin-top: 0px; */
+            border-radius: 20px;
+            font-size: 40px;
+        }
+
+        .navbar_search>div {
+            margin-left: 40px;
+            color: white;
+
+        }
+
+        .navbar_search>div>a>i {
+            color: white;
+        }
+
+        .cart_count {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            z-index: 999;
+            background: red;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            font-size: 23px;
+        }
+
+        /* end navbar */
+
+        #mySlideshow {
+            border: 5px solid black;
+
+        }
+
+        #mySlideshow>img {
+            width: 100%;
+            height: 1100px;
+        }
+
+        .marquee {
+            background-color: black;
+            padding: 10px;
+        }
+
+        span.text-stroke {
+            -webkit-text-stroke: 1px white;
+            font-weight: 700;
+        }
+
+        span.text-white {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        #myvideo {
+            margin: auto;
+            float: none;
+            display: block;
+            max-width: 1900px;
+            width: 100%;
+        }
+
+        .video_item {
+            flex: 0 0 100%;
+            max-width: 100%;
+            background-color: black;
+        }
+
+        .best_sellers {
+            max-width: 100%;
+            /* height: 600px; */
+            /* border: 2px solid red; */
+        }
+
+        .best_sellers>h1 {
+            font-size: 70px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        .bestseller_items {
+            margin: auto;
+            max-width: 90%;
+            /* border: 2px solid black; */
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+
+        }
+
+        .bestseller_items>div {
+            /* border: 1px solid green; */
+            margin: 5px;
+        }
+
+        .img {
+            background: #c4c4c4;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+
+        .img>img {
+            margin-left: 22%;
+        }
+
+        .item_text {
+            /* font-weight: bold; */
+            /* margin-left: 10px; */
+            background-color: whitesmoke;
+        }
+
+        .item_text>h2 {
+            font-weight: bold;
+        }
+
+        .points>ul>li {
+            list-style-type: square;
+        }
+
+        .btn_shopnow {
+            margin-left: 20px;
+            width: 200px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+            border-radius: 2em;
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        .btn_shopnow:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .trending_item1 {
+            background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD201_180403df-f162-4d8a-b6f7-cb5a41f50db8_720x.png?v=1632310343");
+            height: 700px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .trending_item2 {
+            background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/441-pro_85497db1-8f2f-45f3-a1f9-9e59c63027c6_720x.png?v=1632309896");
+            height: 700px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            cursor: pointer;
+
+        }
+
+        .trending_item3 {
+            background-image: url("https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Trending-Products_AD131_278f935e-037b-423e-87f5-f2af16cd794f_720x.png?v=1630471231");
+            height: 700px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            cursor: pointer;
+
+        }
+
+        /*  start dropdown */
+
+        .dropdown .dropbtn {
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding-top: 0px;
+            padding-bottom: 10px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+
+        .dropdown:hover .dropbtn,
+        .dropbtn:focus {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            right: -88px;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 8px 8x;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            background-color: red;
+            color: white;
+            margin-top: 5px;
+            font-size: 20px;
+
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .dropbtn>i {
+            font-size: 35px;
+        }
+
+        .hi {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px;
+
+        }
+
+        /* end dropdown */
+    </style>
+</head>
+
+
+<body>
+    <div class="wholePage">
+        <div class="navbar">
+            <div class="navbar-cont">
+                <a href="#">
+                    <img width="150px"
+                        src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_200x.png?v=1600753267"
+                        alt="boat" title="boat" class="boat_logo" style="background-color: black;" />
+                </a>
+            </div>
+            <div class="navbar_category">
+                <ul class="category_item">
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">Pro It Up</a></li>
+                    <li><a href="#">Sound of Champions</a></li>
+                    <li><a href="#">more</a></li>
+                </ul>
+            </div>
+            <div class="navbar_search">
+                <input type="text" placeholder="search" />
+                <div>
+                    <a href="#"><i class="bi bi-gift"></i></a>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">
+                        <i class="bi bi-person-fill"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <p class="hi">Hi boAthead!</p>
+                        <a href="login.html">Log In</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="cart.html"><i class="bi bi-cart-fill"></i>
+                        <span class="cart_count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------stop navbar----------------------------- -->
+
+        <!-- --------------------------start slideshow---------------------- -->
+
+        <div id="mySlideshow"></div>
+        <!-- --------------------------end slideshow---------------------- -->
+
+        <!-- --------------------------start line---------------------- -->
+        <div class="marquee">
+            <p class="marquee_text" style="font-size: 30px;">
+                <marquee scrollamount="10" direction="left to right">
+                    <span class="text-white">SOUND OF CHAMPIONS &nbsp;&nbsp;</span>
+                    <span class="text-stroke">PLAY LIKE A KING &nbsp;&nbsp;</span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white">SOUND OF CHAMPIONS &nbsp;&nbsp;</span>
+                    <span class="text-stroke">PLAY LIKE A KING &nbsp;&nbsp;</span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white">SOUND OF CHAMPIONS &nbsp;&nbsp;</span>
+                    <span class="text-stroke">PLAY LIKE A KING &nbsp;&nbsp;</span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white"></span>
+                    <span class="text-stroke"></span>
+                    <span class="text-white">SOUND OF CHAMPIONS &nbsp;&nbsp;</span>
+                    <span class="text-stroke">PLAY LIKE A KING &nbsp;&nbsp;</span>
+                    <span class="text-white">SOUND OF CHAMPIONS &nbsp;&nbsp;</span>
+                    <span class="text-stroke">PLAY LIKE A KING &nbsp;&nbsp;</span>
+                </marquee>
+            </p>
+        </div>
+        <!-- --------------------------end line---------------------- -->
+
+        <!-- ----------------------start video---------------------------->
+        <div class="video_item">
+            <video id="myvideo" height="650px" playsinline loop controls preload="none" muted autoplay>
+                <source src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/digital_20_new.mp4?v=1632827302"
+                    type="video/mp4">
+            </video>
+        </div>
+        <!-- ----------------------end video---------------------------->
+
+        <!-- ----------------------start Best selllers---------------------------->
+        <div class="best_sellers">
+            <h1>Best Sellers</h1>
+            <div class="bestseller_items">
+                <!-- data will be inserted from javascript -->
+            </div>
+        </div>
+        <!-- ---------------------- End Best selllers---------------------------->
+
+        <!-- ---------------------start tranding in Earbuds----------------- -->
+        <div class="best_sellers">
+            <h1>Trending in Earbuds</h1>
+            <div class="bestseller_items">
+                <div class="trending_item1">
+                </div>
+                <div class="trending_item2">
+                </div>
+
+                <div class="trending_item3"></div>
+            </div>
+        </div>
+
+        <!-- ---------------------end tranding in Earbuds----------------- -->
+
+
+        <!-- ---------------------start top smart watches----------------- -->
+        <div class="best_sellers">
+            <h1>Top Smart Watches</h1>
+            <div class="bestseller_items">
+                <div class="item1">
+                    <div class="img">
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_1_300x.png?v=1623931310" />
+                    </div>
+                    <div class="item_text">
+                        <h2>BOAT Watch Xtend</h2>
+                        <div style="display: none;">-</div>
+                        <div class="price">
+                            <h4 style="display: inline; color: red;font-weight: bold;">Rs.<span>3,499.00</span></h4>
+                            <span style="text-decoration: line-through;font-size: 15px;">Rs. 7,999.00</span>
+                        </div>
+                        <div class="points">
+                            <ul>
+                                <li>Colour varients for every style</li>
+                                <li>Fast Charge in just 15 minutes</li>
+                                <li>Ace your workout with IPXS rating</li>
+                            </ul>
+                        </div>
+                        <button class="btn_shopnow">shop Now</button>
+                    </div>
+                </div>
+
+
+                <div class="item1">
+                    <div class="img">
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/9da7e1ae-89f2-42c4-9714-76ac5ec83817_300x.png?v=1625157768" />
+                    </div>
+                    <div class="item_text">
+                        <h2>BOAT Watch Flash</h2>
+                        <div style="display: none;">-</div>
+                        <div class="price">
+                            <h4 style="display: inline; color: red;font-weight: bold;">Rs.<span>2,999.00</span></h4>
+                            <span style="text-decoration: line-through;font-size: 15px;">Rs. 6,999.00</span>
+                        </div>
+                        <div class="points">
+                            <ul>
+                                <li>Track and transform your health</li>
+                                <li>Full touch display</li>
+                                <li>Track your menstrual cycle</li>
+                            </ul>
+                        </div>
+                        <button class="btn_shopnow">shop Now</button>
+                    </div>
+                </div>
+
+                <div class="item1">
+                    <div class="img">
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/e7910a39-186a-41f6-ac57-fc3e84108104_300x.png?v=1625046257" />
+                    </div>
+                    <div class="item_text">
+                        <h2>BOAT Storm</h2>
+                        <div style="display: none;">-</div>
+                        <div class="price">
+                            <h4 style="display: inline; color: red;font-weight: bold;">Rs.<span>2,999.00</span></h4>
+                            <span style="text-decoration: line-through;font-size: 15px;">Rs. 5,999.00</span>
+                        </div>
+                        <div class="points">
+                            <ul>
+                                <li>Track and transform your health</li>
+                                <li>Full touch display</li>
+                                <li>Track your Spo2 levels</li>
+                            </ul>
+                        </div>
+                        <button class="btn_shopnow">shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ---------------------end top smart watches----------------- -->
+
+    </div>
+</body>
+
+</html>
+<script>
+
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function (e) {
+        if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }
+
+    let images = [
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Pro_it_up_wbanner_a779aa1d-b228-4afa-a874-99b887a565d8_1728x.jpg?v=1632373674",
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Stone170_wbanner_1728x.jpg?v=1631511050",
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/UNLEASHING-THE-BASS-131_web_1_1728x.jpg?v=1632225545",
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Rockerz450_wbanner_1728x.jpg?v=1630929202",
+        "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/IPLBanner_wbanner_3_1728x.jpg?v=1632389532"
+    ];
+
+
+    let container = document.getElementById("mySlideshow");
+
+    function startSlideshow() {
+        //1. creaate a imgage;
+        var counter = 0;
+        let img = document.createElement("img");
+        img.src = images[0];
+
+        container.append(img);
+
+        counter = counter + 1;
+
+        setInterval(function () {
+
+            container.innerHTML = null;
+
+            if (counter === images.length) {
+                counter = 0;
+            }
+
+            let img = document.createElement("img");
+            img.src = images[counter];
+
+            container.append(img);
+
+            counter = counter + 1;
+
+        }, 5000)
+
+
+    }
+    startSlideshow();
+
+</script>
+<script type="text/javascript" src="script/index.js"></script>

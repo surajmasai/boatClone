@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        .container {
+            /* border: 2px solid red; */
+            width: 70%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 54% 50%;
+            grid-gap: 10px;
+            margin-top: 80px;
+            /* background-color: grey; */
+        }
+
+        .clear {
+            clear: both;
+
+        }
+
+        /* .left {
+            border: 2px solid green;
+            background-color: burlywood;
+        } */
+
+        .right {
+            /* border: 2px solid orchid; */
+            background-color: white;
+            padding: 20px;
+        }
+
+        .notice>p {
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 680px;
+        }
+
+        .logo_img {
+            width: 190px;
+        }
+
+
+
+        .contact {
+            background-color: #fafafa;
+            width: 650px;
+            padding: 10px;
+            margin: 20px;
+            margin-top: 50px;
+        }
+
+        .contact>div>p {
+            font-size: 20px;
+
+        }
+
+        .shipping1 {
+            background-color: #fafafa;
+            width: 650px;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .shipping1>p {
+            font-size: 20px;
+        }
+
+
+
+        .shipping {
+            background-color: #fafafa;
+            width: 650px;
+            padding: 10px;
+            margin: 20px;
+
+        }
+
+        .shipping>h5 {
+            font-size: 25px;
+            margin-top: 5px;
+        }
+
+        .shipping>p {
+            font-size: 20px;
+        }
+
+        .shipping>p>input {
+            width: 20px;
+            height: 20px;
+        }
+
+        .shipping2 {
+            background-color: #fafafa;
+            width: 650px;
+            height: 400px;
+            padding: 10px;
+            margin: 20px;
+
+        }
+
+        .shipping2>img {
+            width: 650px;
+        }
+
+        .payment {
+            background-color: #fafafa;
+            width: 650px;
+            padding: 10px;
+            margin: 20px;
+        }
+
+
+        .btn {
+            width: 650px;
+            margin: auto;
+            display: flex;
+        }
+
+        .return {
+            margin-left: -25px;
+            margin-top: 15px;
+            font-size: 30px;
+
+        }
+
+        .return>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .return>a:hover {
+            color: blue;
+        }
+
+        .forward {
+            margin-left: 200px;
+        }
+
+        .forward>button {
+            width: 220px;
+            height: 50px;
+            background-color: red;
+            border: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+
+        /* right side */
+        .carrt {
+            display: grid;
+            grid-template-columns: 20% 50% 18% 20%;
+        }
+
+        .carrt>div>img {
+            width: 100px;
+            border: 1px solid grey;
+        }
+
+        .cutprice>p {
+            text-decoration: line-through;
+        }
+
+        .carrt h5 {
+            font-size: 18px;
+        }
+
+        .carrt p {
+            font-size: 19px;
+        }
+
+        .coupon>input {
+            height: 50px;
+            width: 400px;
+            font-size: 20px;
+        }
+
+        .coupon>button {
+            width: 150px;
+            height: 55px;
+            font-size: 20px;
+            background-color: grey;
+            border: none;
+            color: white;
+            margin-left: 15px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wholepage">
+        <div class="container">
+            <div class="left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_2.png?70635"
+                            alt="logo" class="logo_img">
+                    </a>
+                    <div class="clear"></div>
+                </div>
+                <div class="notice">
+                    <p>Note : Due to COVID lockdowns. please expect a delay in the delivery of your order</p>
+                </div>
+                <div class="contact">
+                    <div>
+                        <p>Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="email"></span></p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+                <div class="shipping1">
+                    <p>ship To &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="address"></span></p>
+                    <div class="clear"></div>
+                </div>
+
+
+                <div class="shipping">
+                    <p><input type="radio">&nbsp;&nbsp;Free Shipping <span style="float: right;">free</span></p>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="shipping2">
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt-x-walnut-1.jpg?v=1629269695"
+                        alt="">
+                    <div class="clear"></div>
+                </div>
+                <div class="payment">
+                    <h2>Payment</h2>
+                    <p>All transctions are secure and encrypted</p>
+                </div>
+
+                <div style="margin-left: 10px;" class="payment">
+
+                    <input style="width: 30px;height: 30px;font-size: 20px;" type="radio" class="round_btn"
+                        onclick="openForm()"><span style="font-size: 20px; margin-left: 10px;margin-right:50%;">PayU
+                        india</span>
+                    <img src="https://s.cdnsbn.com/images/common/Visa.png" alt="visa" />
+                    <img src="https://s.cdnsbn.com/images/common/Master.png" alt="master">
+                    <img src="https://s.cdnsbn.com/images/common/AmericanExpress.png" alt="American">
+                    <div class="form-popup" id="myForm">
+                        <svg style="color: gray;margin-left: 35%;" xmlns="http://www.w3.org/2000/svg" width="150px"
+                            height="170px" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
+                            <path
+                                d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                            <path
+                                d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z" />
+                        </svg>
+                        <p>After clicking "complete order", you will be redirected to payment page</p>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </div>
+                </div>
+
+
+
+                <div class="btn">
+                    <div class="return"><a href="shipping.html">Return to shipping</a>
+                    </div>
+                    <div class="forward">
+                        <button id="myBtn" type="button" disabled onclick="forward()">Complete order</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ---------------end left----------- -->
+
+
+            <div class="right">
+                <div class="right_item">
+                    <!-- code is will be in javascript -->
+                </div>
+
+                <!-- end cart products -->
+                <div class="coupon">
+                    <h2>Apply Coupon Code</h2>
+                    <input type="text" placeholder="Discount Code" id="text" />
+                    <button id="promo">Apply</button>
+                    <div id="apply">Enter Discount Coupon</div>
+                </div>
+                <hr>
+                <div>
+                    <p style="font-size: 22px;">subtotal<span id="total_price1" style="float: right;">0</span></p>
+                    <p style="font-size: 22px;">shipping<span style="float: right;">Free</span>
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <h1>subtotal<span id="itemTotal" style="float: right;">0</span></h1>
+                    <p>Including ₹379.65 in taxes</p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+    const cartitem = JSON.parse(localStorage.getItem("boatcart"));
+
+    cartitem.forEach((item) => {
+        const cartdat = item;
+
+        const html = `<div class="carrt">
+                   <div class="product_img">
+                        <img src="${item.image}"
+                            alt="product image" />
+                    </div>
+                    <div>
+                        <h5>${item.name}</h5>
+                    </div>
+                    <div>
+                        <p>Rs.<span>${item.price}</span></p>
+                    </div>
+                    <div class="cutprice">
+                        <p>Rs.<span>${item.price1}</span></p>
+                    </div>
+                    </div>                
+                <hr>`;
+
+        // console.log(html)
+        const checkout = document.getElementsByClassName("right_item")[0];
+        // console.log(checkout)
+        checkout.insertAdjacentHTML("beforeend", html)
+
+    });
+    var total_price = JSON.parse(localStorage.getItem("payable"));
+    // console.log(total_price)
+
+    var total_price1 = document.getElementById("total_price1");
+    total_price1.innerHTML = "Rs. " + total_price;
+
+
+
+    var btn_promo = document.getElementById("promo");
+    btn_promo.addEventListener("click", applycode);
+
+    applycode();
+
+    function applycode() {
+        var total_amount = total_price;
+
+        var afterpromo = Math.floor(total_amount - (total_amount * 3) / 100);
+
+        let promoInput = document.getElementById("text").value;
+
+        checker(total_amount, afterpromo, promoInput);
+
+        function checker(total_amount, afterpromo, promoInput) {
+            if (promoInput == "masai30") {
+                document.getElementById("itemTotal").innerText = "Rs. " + afterpromo;
+                document.getElementById("apply").innerText = "Congratulation!"
+
+
+            }
+            else {
+                document.getElementById("itemTotal").innerText = "Rs. " + total_amount;
+
+            }
+        }
+    }
+
+    var userdata = JSON.parse(localStorage.getItem("useradd"))
+
+    // console.log(userdata)
+
+
+    let user_email = document.getElementById("email").innerText = userdata?.take_email;
+
+    let user_address = document.getElementById("address").innerText = userdata?.take_add + "," + userdata?.take_appart + "," + userdata?.take_pin + "," + userdata?.take_city + "," + userdata?.take_state + "," + userdata?.take_country;
+
+
+    function forward() {
+        document.write("<h1> please wait redirect to payment page</h1>");
+        setTimeout(function () {
+
+            window.location.href = "payment.html";
+        }, 5000);
+    }
+
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+        document.getElementById("myBtn").disabled = false;
+    }
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+
+
+
+</script>

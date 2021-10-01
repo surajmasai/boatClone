@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <style>
+        body {
+            background-color: lightsteelblue;
+        }
+
+        .heading {
+            text-align: center;
+            color: white;
+            font-size: 50px;
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            width: 50%;
+            height: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        .left {
+            background-color: rosybrown;
+            padding: 20px;
+        }
+
+        .left>p {
+            font-size: 20px;
+        }
+
+        .left>div>button {
+            width: 100%;
+            height: 50px;
+            margin-top: 50px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: springgreen;
+            font-size: 20px;
+        }
+
+        .left>div>button:hover {
+            background-color: crimson;
+            color: white;
+        }
+
+        .right {
+            background-color: royalblue;
+            font-weight: bold;
+        }
+
+        #payNow {
+            width: 400px;
+            height: 50px;
+            position: absolute;
+            top: 900px;
+            right: 27%;
+            font-size: 30px;
+        }
+
+        #details>div {
+            margin-top: 20px;
+            padding-left: 30px;
+        }
+
+        #details>div>input {
+            height: 40px;
+            width: 330px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        #details>div>input:hover {
+            border: 2px solid red;
+        }
+
+        #details>div>input:focus {
+            border: none;
+            background-color: grey;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">Payment</h1>
+    <div class="wholepage">
+        <div class="container">
+            <div class="left">
+                <a href="shipping2.html" onclick="backbtn()">Back</a>
+                <h1>payable Amount:Rs.<span id="total_price1">0</span></h1>
+                <p>select payment method</p>
+                <div>
+                    <button id="once" onclick="cardDetails()">Debit Card and Credit Card</button>
+                </div>
+                <div>
+                    <button id="once1" onclick="upidetails()">UPI</button>
+                </div>
+
+            </div>
+            <div class="right">
+                <div id="details"></div>
+                <button id="payNow">PAY NOW</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let parent = document.getElementById("details")
+
+    function cardDetails() {
+
+        document.getElementById("once").disabled = 'true';
+
+        // let div = document.createElement("div");
+        let para = document.createElement("h3");
+        para.innerText = "Please Enter Card Details Here!";
+        let div1 = document.createElement("div");
+        let div2 = document.createElement("div");
+        let div3 = document.createElement("div");
+        let div4 = document.createElement("div");
+
+
+        let card = document.createElement("input");
+        card.placeholder = "Card Number";
+        card.type = "number";
+        card.id = "cardNo"
+
+        let expiry = document.createElement("input")
+        expiry.placeholder = "expiry";
+        expiry.type = "number";
+        expiry.id = "exp";
+
+        let cvc = document.createElement("input")
+        cvc.placeholder = "CVC";
+        cvc.type = "number";
+        cvc.id = "cvcNo";
+
+        let cardholder = document.createElement("input");
+        cardholder.placeholder = "Card Holder Name";
+        cardholder.id = "CardHolderName"
+
+
+        div1.append(card)
+        div2.append(expiry)
+        div3.append(cvc)
+        div4.append(cardholder)
+
+
+
+
+
+        // div.append(para, div1, div2, div3, div4);
+
+
+        parent.append(para, div1, div2, div3, div4);
+    }
+
+    function upidetails() {
+        document.getElementById("once1").disabled = 'true';
+
+        let para = document.createElement("h3");
+        para.innerText = "Please Enter UPI ID Here!";
+        let div1 = document.createElement("div");
+
+        let upi = document.createElement("input");
+        upi.placeholder = "UPI ID";
+        upi.id = "upiid"
+
+        div1.append(upi)
+
+        parent.append(div1)
+
+    }
+
+
+    var pay_btn = document.getElementById("payNow")
+    pay_btn.addEventListener("click", pay)
+
+    function pay() {
+        var cardNo = document.getElementById("cardNo").value;
+        var cardE = document.getElementById("exp").value;
+        var cvc = document.getElementById("cvcNo").value;
+        if (cardNo.length == 16 && cardE.length == 4 && cvc.length == 3) {
+            //  console.log("yes")
+            alert("payment Successful");
+
+            setTimeout(function () {
+
+                window.location.href = "thanks.html";
+            }, 3000);
+
+        } else {
+            alert("your card is details wrong")
+        }
+    }
+
+    function backbtn() {
+        alert("are you sure")
+    }
+
+    var total_price = JSON.parse(localStorage.getItem("payable"));
+
+    var total_price1 = document.getElementById("total_price1");
+    total_price1.innerHTML = total_price + ".00";
+
+
+</script>

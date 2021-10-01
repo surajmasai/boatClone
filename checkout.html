@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            /* border: 2px solid red; */
+            width: 70%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 54% 45%;
+            grid-gap: 10px;
+            margin-top: 80px;
+            /* background-color: grey; */
+        }
+
+        .clear {
+            clear: both;
+
+        }
+
+        /* .left {
+            border: 2px solid green;
+            background-color: burlywood;
+
+        } */
+
+        */ .right {
+            /* border: 2px solid orchid;
+            background-color: white; */
+            padding: 20px;
+        }
+
+        .notice>p {
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 680px;
+        }
+
+        .logo_img {
+            width: 190px;
+        }
+
+
+
+        .contact {
+            background-color: #fafafa;
+            width: 650px;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .c_left {
+            float: left;
+            font-size: 25px;
+            margin-top: -20px;
+        }
+
+        .c_right {
+            float: right;
+            margin-top: -17px;
+        }
+
+        .email>input {
+            margin-top: -10px;
+            width: 95%;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .checkbox>input {
+            width: 20px;
+            height: 20px;
+            margin-top: 10px;
+        }
+
+        .shipping {
+            background-color: #fafafa;
+            width: 650px;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .shipping>h5 {
+            font-size: 25px;
+            margin-top: 5px;
+        }
+
+        .userinput1 {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 5px;
+        }
+
+        .userinput1 input {
+            height: 40px;
+        }
+
+        .input1 {
+            width: 300px;
+        }
+
+        .input2 {
+            width: 300px;
+        }
+
+        .userinput2 {
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 5px;
+            margin-top: 10px;
+        }
+
+        .userinput2 input {
+            height: 40px;
+            width: 96.5%;
+        }
+
+        .userinput3 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 5px;
+            margin-top: 10px;
+        }
+
+        .userinput3 input {
+            height: 40px;
+        }
+
+        .input3 {
+            width: 190px;
+        }
+
+        .input4 {
+            width: 190px;
+        }
+
+        .input5 {
+            width: 190px;
+        }
+
+        .btn {
+            width: 650px;
+            margin: auto;
+            display: flex;
+        }
+
+        .return {
+            margin-left: -25px;
+            margin-top: 15px;
+            font-size: 30px;
+
+        }
+
+        .return>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .return>a:hover {
+            color: blue;
+        }
+
+        .forward {
+            margin-left: 200px;
+        }
+
+        .forward>button {
+            width: 220px;
+            height: 50px;
+            background-color: red;
+            border: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .carrt {
+            display: grid;
+            grid-template-columns: 20% 50% 18% 20%;
+        }
+
+        .carrt>div>img {
+            width: 100px;
+            border: 1px solid grey;
+        }
+
+        .cutprice>p {
+            text-decoration: line-through;
+        }
+
+        .carrt h5 {
+            font-size: 18px;
+        }
+
+        .carrt p {
+            font-size: 19px;
+        }
+
+        .coupon>input {
+            height: 50px;
+            width: 400px;
+            font-size: 20px;
+        }
+
+        .coupon>button {
+            width: 150px;
+            height: 55px;
+            font-size: 20px;
+            background-color: grey;
+            border: none;
+            color: white;
+            margin-left: 15px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wholepage">
+        <div class="container">
+            <div class="left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Boat-Logo_2.png?70635"
+                            alt="logo" class="logo_img">
+                    </a>
+                    <div class="clear"></div>
+                </div>
+                <div class="notice">
+                    <p>Note : Due to COVID lockdowns. please expect a delay in the delivery of your order</p>
+                </div>
+                <div class="contact">
+                    <div class="c_left">
+                        <h5>Contact information</h5>
+                    </div><br>
+                    <div class="c_right">
+                        <p>Already have an account?<a href="login.html">Log in</a></p>
+                    </div><br>
+
+                    <div class="email">
+                        <input type="text" placeholder="Email" id="take_email"><br>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox"><span style="font-size: 20px;padding-left: 5px;">keep me
+                            updated on my order
+                            status over email
+                            and whatsapp</span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="shipping">
+                    <h5>shipping address</h5>
+                    <div class="userinput1">
+                        <div>
+                            <input type="text" placeholder="First name" class="input1" id="take_first" />
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Last name" class="input2" id="take_last" />
+                        </div>
+                        <div class="clear"></div>
+
+                    </div>
+                    <div class="userinput2">
+                        <input type="text" placeholder="Address" id="take_add">
+                        <div class="clear"></div>
+
+                    </div>
+                    <div class="userinput2">
+                        <input type="text" placeholder="Apartment,suite,etc(optional)" id="take_appart">
+                        <div class="clear"></div>
+                    </div>
+                    <div class="userinput2">
+                        <input type="text" placeholder="city" id="take_city">
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="userinput3">
+                        <div>
+                            <input type="text" placeholder="country" class="input3" id="take_country" />
+                        </div>
+                        <div>
+                            <input type="text" placeholder="state" class="input4" id="take_state" />
+                        </div>
+                        <div>
+                            <input type="number" placeholder="pincode" class="input5" id="take_pin" />
+                        </div>
+                        <div class="clear"></div>
+
+                    </div>
+                    <div class="userinput2">
+                        <input type="text" placeholder="Mobile No." id="take_moile">
+                    </div>
+                    <p class="alert">please enter correct phone number</p>
+
+                    <div class="checkbox">
+                        <input type="checkbox"><span style="font-size: 20px;padding-left: 5px;">Save this information
+                            for next time</span>
+                    </div>
+                    <div class="clear"></div>
+
+                </div>
+
+                <div class="btn">
+                    <div class="return"><a href="cart.html">Return to cart</a>
+                    </div>
+                    <div class="forward">
+                        <button id="save_value">Continue to shipping </button>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ---------------end left----------- -->
+
+
+            <div class="right">
+                <div class="right_item">
+                    <!-- code is will be in javascript -->
+                </div>
+
+                <!-- end cart products -->
+                <div class="coupon">
+                    <h2>Apply Coupon Code</h2>
+                    <input type="text" placeholder="Discount Code" id="text" />
+                    <button id="promo">Apply</button>
+                    <div id="apply">Enter Discount Coupon</div>
+                </div>
+                <hr>
+                <div>
+                    <p style="font-size: 22px;">subtotal<span id="total_price1" style="float: right;">0</span></p>
+                    <p style="font-size: 22px;">shipping<span style="float: right;">Calcualted at next step</span></p>
+                </div>
+                <hr>
+                <div>
+                    <h1>subtotal<span id="itemTotal" style="float: right;">0</span></h1>
+                    <p>Including ₹379.65 in taxes</p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    const cartitem = JSON.parse(localStorage.getItem("boatcart"));
+
+    cartitem.forEach((item) => {
+        const cartdat = item;
+
+        const html = `<div class="carrt">
+                   <div class="product_img">
+                        <img src="${item.image}"
+                            alt="product image" />
+                    </div>
+                    <div>
+                        <h5>${item.name}</h5>
+                    </div>
+                    <div>
+                        <p>Rs.<span>${item.price}</span></p>
+                    </div>
+                    <div class="cutprice">
+                        <p>Rs.<span>${item.price1}</span></p>
+                    </div>
+                    </div>                
+                <hr>`;
+
+        // console.log(html)
+        const checkout = document.getElementsByClassName("right_item")[0];
+        // console.log(checkout)
+        checkout.insertAdjacentHTML("beforeend", html)
+
+    });
+    var total_price = JSON.parse(localStorage.getItem("payable"));
+
+    var total_price1 = document.getElementById("total_price1");
+    total_price1.innerHTML = "Rs. " + total_price;
+
+
+
+    var btn_promo = document.getElementById("promo");
+    btn_promo.addEventListener("click", applycode);
+
+    applycode();
+
+    function applycode() {
+        var total_amount = total_price;
+
+        var afterpromo = Math.floor(total_amount - (total_amount * 3) / 100);
+
+        let promoInput = document.getElementById("text").value;
+
+        checker(total_amount, afterpromo, promoInput);
+
+        function checker(total_amount, afterpromo, promoInput) {
+            if (promoInput == "masai30") {
+                document.getElementById("itemTotal").innerText = "Rs. " + afterpromo;
+                document.getElementById("apply").innerText = "Congratulation!"
+
+
+            }
+            else {
+                document.getElementById("itemTotal").innerText = "Rs. " + total_amount;
+
+            }
+        }
+    }
+
+    save_value.onclick = function (e) {
+
+        let user = {
+            take_email: document.getElementById("take_email").value,
+            take_first: document.getElementById("take_first").value,
+            take_last: document.getElementById("take_last").value,
+            take_add: document.getElementById("take_add").value,
+            take_appart: document.getElementById("take_appart").value,
+            take_city: document.getElementById("take_city").value,
+            take_country: document.getElementById("take_country").value,
+            take_state: document.getElementById("take_state").value,
+            take_pin: document.getElementById("take_pin").value,
+            take_moile: document.getElementById("take_moile").value,
+        };
+        localStorage.setItem("useradd", JSON.stringify(user));
+        // console.log(localStorage.getItem("useradd"))
+        e.preventDefault();
+        window.location.href = "shipping.html"
+    };
+
+</script>
